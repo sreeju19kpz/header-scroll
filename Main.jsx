@@ -3,6 +3,7 @@ import { NavigationContainer } from "@react-navigation/native";
 import HomeScreen from "./components/screens/HomeScreen";
 import { GestureHandlerRootView } from "react-native-gesture-handler";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
+import Screen from "./components/screens/Screen";
 const Tab = createBottomTabNavigator();
 export default Main = () => {
   return (
@@ -23,7 +24,7 @@ export default Main = () => {
             },
           }}
         >
-          <Tab.Screen name="Home" children={HomeScreen} />
+          <Tab.Screen name="Home" children={Screen} />
           <Tab.Screen name="wddd  " component={HomeScreen} />
         </Tab.Navigator>
       </NavigationContainer>
